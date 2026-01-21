@@ -156,3 +156,20 @@ def iterative_compress(input_path, output_path, target_size_mb, file_type):
             if found_fit: break
 
     return f"Target Met: {found_fit} (Q:{best_q} S:{best_scale})"
+
+def convert_pdf_to_word(input_pdf, output_docx):
+    """
+    Converts a PDF file to a Word (.docx) file with lazy loading to prevent startup crashes.
+    """
+    try:
+        from pdf2docx import Converter
+        cv = Converter(input_pdf)
+        cv.convert(output_docx, start=0, end=None)
+        cv.close()
+        return True
+    except ImportError as e:
+        if "DLL load failed" in str(e):
+            raise Exception("PDF to Word conversion is unavailable because some system dependencies (MSVC Redistributables) are missing. Please install the latest Microsoft Visual C++ Redistributable or use the File Compressor feature.")
+        raise e
+    except Exception as e:
+        raise Exception(f"Conversion failed: {str(e)}")

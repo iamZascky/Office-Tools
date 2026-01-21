@@ -1,0 +1,10 @@
+2026-01-21 15:15:05,363 - INFO - --- Launching Office Tools ---
+2026-01-21 15:15:05,393 - DEBUG - Running as script
+2026-01-21 15:15:05,393 - INFO - Base Directory: D:\Antigravity Workspace\Office Tools
+2026-01-21 15:15:05,393 - DEBUG - Starting python discovery
+2026-01-21 15:15:05,393 - DEBUG - Checking candidate: C:\Users\Dell\AppData\Local\Programs\Python\Python312\pythonw.exe
+2026-01-21 15:15:05,394 - INFO - Found python at: C:\Users\Dell\AppData\Local\Programs\Python\Python312\pythonw.exe
+2026-01-21 15:15:05,394 - INFO - Target script: D:\Antigravity Workspace\Office Tools\Office Tools.py
+2026-01-21 15:15:05,394 - INFO - Python EXE: C:\Users\Dell\AppData\Local\Programs\Python\Python312\pythonw.exe
+2026-01-21 15:15:05,395 - INFO - Executing: C:\Users\Dell\AppData\Local\Programs\Python\Python312\pythonw.exe D:\Antigravity Workspace\Office Tools\Office Tools.py
+2026-01-21 15:15:05,459 - INFO - Process started successfully
