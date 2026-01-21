@@ -8,7 +8,7 @@ from compressor import iterative_compress, get_file_size_mb
 class CompressorApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Antigravity File Compressor")
+        self.root.title("Office Tools")
         self.root.geometry("400x150")
         self.root.configure(bg="#f8f9fa")
         
